@@ -5,7 +5,6 @@ import os
 # Read the file
 entire = pd.read_csv('train.csv', header=None)
 print(entire.iloc[3599999])
-sys.exit(1)
 
 # Make splits in the df
 inds = list(range(0, len(entire) + 1, 600000))
